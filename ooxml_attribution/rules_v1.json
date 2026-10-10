@@ -1,0 +1,623 @@
+{
+  "schema": 1,
+  "name": "rules_v1",
+  "families": [
+    {
+      "role": "material",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0001",
+      "when": [
+        {
+          "id": "A0001",
+          "key": "[\"xml\",\"word/settings.xml\",\"/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}settings[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compat[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting[5]\",\"@{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name\"]",
+          "state": {
+            "state": "value",
+            "value": "differentiateMultirowTableHeaders"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0002",
+      "when": [
+        {
+          "id": "A0002",
+          "key": "[\"xml\",\"word/settings.xml\",\"/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}settings[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compat[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting[5]\",\"@{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name\"]",
+          "state": {
+            "state": "value",
+            "value": "differentiateMultirowTableHeaders"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "DOCX",
+      "target": "python_docx",
+      "when_mode": "AND",
+      "id": "F0003",
+      "when": [
+        {
+          "id": "A0003",
+          "key": "[\"xml\",\"word/settings.xml\",\"/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}settings[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsids[1]/{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsidRoot[1]\",\"@{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val\"]",
+          "state": {
+            "state": "value",
+            "value": "00B47730"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "PPTX",
+      "target": "artifact_tool",
+      "when_mode": "AND",
+      "id": "F0004",
+      "when": [
+        {
+          "id": "A0004",
+          "key": "[\"xml\",\"docProps/core.xml\",\"/{http://schemas.openxmlformats.org/package/2006/metadata/core-properties}coreProperties[1]/{http://purl.org/dc/elements/1.1/}creator[1]\",\"text\"]",
+          "state": {
+            "state": "value",
+            "value": "Walnut Exporter"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "PPTX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0005",
+      "when": [
+        {
+          "id": "A0005",
+          "key": "[\"xml\",\"ppt/slideLayouts/slideLayout1.xml\",\"/{http://schemas.openxmlformats.org/presentationml/2006/main}sldLayout[1]\",\"@preserve\"]",
+          "state": {
+            "state": "value",
+            "value": "1"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "PPTX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0006",
+      "when": [
+        {
+          "id": "A0006",
+          "key": "[\"xml\",\"ppt/slideLayouts/slideLayout1.xml\",\"/{http://schemas.openxmlformats.org/presentationml/2006/main}sldLayout[1]\",\"@preserve\"]",
+          "state": {
+            "state": "value",
+            "value": "1"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "XLSX",
+      "target": "artifact_tool",
+      "when_mode": "AND",
+      "id": "F0007",
+      "when": [
+        {
+          "id": "A0007",
+          "key": "[\"xml\",\"xl/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]\",\"@name\"]",
+          "state": {
+            "state": "value",
+            "value": "ChatGPT"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0008",
+      "when": [
+        {
+          "id": "A0008",
+          "key": "[\"xml\",\"xl/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]\",\"@name\"]",
+          "state": {
+            "state": "value",
+            "value": "Office Theme"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0009",
+      "when": [
+        {
+          "id": "A0009",
+          "key": "[\"xml\",\"xl/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]\",\"@name\"]",
+          "state": {
+            "state": "value",
+            "value": "Office Theme"
+          }
+        }
+      ]
+    },
+    {
+      "role": "office_trace",
+      "format": "DOCX",
+      "target": "python_docx",
+      "when_mode": "AND",
+      "id": "F0010",
+      "when": [
+        {
+          "id": "A0010",
+          "key": "[\"xml\",\"docProps/app.xml\",\"/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Properties[1]/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Application[1]\",\"text\"]",
+          "state": {
+            "state": "value",
+            "value": "Microsoft Office Word"
+          }
+        }
+      ]
+    },
+    {
+      "role": "office_trace",
+      "format": "PPTX",
+      "target": "artifact_tool",
+      "when_mode": "AND",
+      "id": "F0011",
+      "when": [
+        {
+          "id": "A0011",
+          "key": "[\"xml\",\"docProps/app.xml\",\"/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Properties[1]/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Application[1]\",\"text\"]",
+          "state": {
+            "state": "value",
+            "value": "Microsoft Office PowerPoint"
+          }
+        }
+      ]
+    },
+    {
+      "role": "office_trace",
+      "format": "XLSX",
+      "target": "artifact_tool",
+      "when_mode": "AND",
+      "id": "F0012",
+      "when": [
+        {
+          "id": "A0012",
+          "key": "[\"xml\",\"docProps/app.xml\",\"/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Properties[1]/{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Application[1]\",\"text\"]",
+          "state": {
+            "state": "value",
+            "value": "Microsoft Excel"
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0013",
+      "when": [
+        {
+          "id": "A0013",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0014",
+      "when": [
+        {
+          "id": "A0014",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0015",
+      "when": [
+        {
+          "id": "A0015",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0016",
+      "when": [
+        {
+          "id": "A0016",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0017",
+      "when": [
+        {
+          "id": "A0017",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0018",
+      "when": [
+        {
+          "id": "A0018",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0019",
+      "when": [
+        {
+          "id": "A0019",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "DOCX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0020",
+      "when": [
+        {
+          "id": "A0020",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "artifact_native",
+      "when_mode": "AND",
+      "id": "F0021",
+      "when": [
+        {
+          "id": "A0021",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"create_system\"]",
+          "state": {
+            "state": "value",
+            "value": 3
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "jszip",
+      "when_mode": "AND",
+      "id": "F0022",
+      "when": [
+        {
+          "id": "A0022",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"extract_version\"]",
+          "state": {
+            "state": "value",
+            "value": 10
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0023",
+      "when": [
+        {
+          "id": "A0023",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0024",
+      "when": [
+        {
+          "id": "A0024",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0025",
+      "when": [
+        {
+          "id": "A0025",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "PPTX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0026",
+      "when": [
+        {
+          "id": "A0026",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "artifact_native",
+      "when_mode": "AND",
+      "id": "F0027",
+      "when": [
+        {
+          "id": "A0027",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"create_system\"]",
+          "state": {
+            "state": "value",
+            "value": 3
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0028",
+      "when": [
+        {
+          "id": "A0028",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0029",
+      "when": [
+        {
+          "id": "A0029",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0030",
+      "when": [
+        {
+          "id": "A0030",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"flags\"]",
+          "state": {
+            "state": "value",
+            "value": 6
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0031",
+      "when": [
+        {
+          "id": "A0031",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "packaging",
+      "format": "XLSX",
+      "target": "python",
+      "when_mode": "AND",
+      "id": "F0032",
+      "when": [
+        {
+          "id": "A0032",
+          "key": "[\"zip\",\"[Content_Types].xml\",\"central\",\"external_attr\"]",
+          "state": {
+            "state": "value",
+            "value": 25165824
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0033",
+      "when": [
+        {
+          "id": "A0033",
+          "key": "[\"xml\",\"word/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}themeElements[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}fontScheme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}minorFont[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}latin[1]\",\"@typeface\"]",
+          "state": {
+            "state": "value",
+            "value": "Calibri"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "DOCX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0034",
+      "when": [
+        {
+          "id": "A0034",
+          "key": "[\"xml\",\"word/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}themeElements[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}fontScheme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}minorFont[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}latin[1]\",\"@typeface\"]",
+          "state": {
+            "state": "value",
+            "value": "Calibri"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0035",
+      "when": [
+        {
+          "id": "A0035",
+          "key": "[\"xml\",\"xl/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}extLst[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}ext[1]/{http://schemas.microsoft.com/office/thememl/2012/main}themeFamily[1]\",\"@name\"]",
+          "state": {
+            "state": "value",
+            "value": "Office Theme"
+          }
+        }
+      ]
+    },
+    {
+      "role": "material",
+      "format": "XLSX",
+      "target": "office",
+      "when_mode": "AND",
+      "id": "F0036",
+      "when": [
+        {
+          "id": "A0036",
+          "key": "[\"xml\",\"xl/theme/theme1.xml\",\"/{http://schemas.openxmlformats.org/drawingml/2006/main}theme[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}extLst[1]/{http://schemas.openxmlformats.org/drawingml/2006/main}ext[1]/{http://schemas.microsoft.com/office/thememl/2012/main}themeFamily[1]\",\"@name\"]",
+          "state": {
+            "state": "value",
+            "value": "Office Theme"
+          }
+        }
+      ]
+    }
+  ],
+  "packaging_consistency": {
+    "policy": "artifact_native_deflate6_v1",
+    "enabled": true,
+    "reference_zlib_runtime": "1.3"
+  }
+}

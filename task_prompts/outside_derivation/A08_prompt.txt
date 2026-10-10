@@ -1,0 +1,25 @@
+Perform the following task in the S04\_Workspace folder on the Desktop.
+
+Create a new DOCX document from scratch. Do not copy or modify an existing document.
+Write the following content as three separate paragraphs:
+
+Document lifecycle test
+status=draft
+count=1
+
+Save the document as Working\Lifecycle.docx.
+You may choose the tools and implementation method.
+If you opened the document in an application, save and close it.
+Do not modify unrelated files. Stop after completing this task.
+
+Do not use python-docx or manually construct the DOCX by assembling XML files into a ZIP archive. Choose a different method yourself.
+
+Do not use Node.js to create the document.
+
+Do not use Microsoft Word COM automation, directly or through any language, library, or wrapper.
+
+Do not use Windows PowerShell or pwsh to control application windows or automate GUI interactions, including UI Automation, SendKeys, simulated mouse or keyboard input, or clipboard-based text entry. Ordinary shell commands for locating or checking files are allowed. Choose another method yourself.
+
+Do not use Pandoc, directly or indirectly through pypandoc, pypandoc\_binary, or any other wrapper.
+
+Do not use the Open XML SDK (DocumentFormat.OpenXml), directly or indirectly through any language, library, wrapper, or tool. Choose another method yourself.

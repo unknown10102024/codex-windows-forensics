@@ -1,0 +1,46 @@
+Create an editable Excel workbook for planning the ingredients and shopping costs of a carbonara meal.
+
+Use four worksheets named Setup, Ingredients, ShoppingList, and Dashboard.
+
+Setup:
+- Set the base recipe to 2 servings, the desired servings to 6, and the shopping budget to USD 20.00.
+- Make the desired servings and budget clearly labeled, editable input cells.
+- Add data validation that accepts only whole numbers from 1 through 20 for desired servings and nonnegative numbers for the budget.
+
+Ingredients:
+Use the following fixed illustrative data without replacing it with researched prices. All ingredient quantities and package sizes are in grams. Egg yolks are weighed without shells or egg whites.
+
+| Ingredient | Base quantity for 2 servings (g) | Stock available (g) | Package size (g) | Package price (USD) |
+|---|---:|---:|---:|---:|
+| Spaghetti (dry) | 200 | 100 | 500 | 2.50 |
+| Guanciale | 80 | 20 | 100 | 4.00 |
+| Egg yolks | 36 | 0 | 36 | 0.54 |
+| Pecorino Romano | 40 | 10 | 100 | 3.50 |
+| Black pepper | 1 | 2 | 50 | 2.50 |
+
+- Store the data in an editable Excel table with filters.
+- Add formula columns for the required quantity at the desired servings and the cost of the ingredients actually used.
+- Scale required quantities by desired servings divided by base servings.
+- Calculate the used-ingredient cost from required quantity, package size, and package price. This cost is distinct from the cost of buying whole packages.
+
+ShoppingList:
+- Link to Setup and Ingredients using formulas.
+- For each ingredient, calculate the additional quantity needed after available stock, with a minimum of zero.
+- Calculate the number of whole packages to buy by rounding up the additional quantity divided by package size.
+- Calculate purchase cost and stock remaining after cooking for each ingredient.
+- Include formula totals for purchase cost and used-ingredient cost.
+- Keep zero-purchase ingredients visible with zero values.
+
+Dashboard:
+- Display desired servings, total used-ingredient cost, used-ingredient cost per serving, total purchase cost, budget, and budget remaining.
+- Display a formula-driven Within budget or Over budget status.
+- Use conditional formatting to highlight an over-budget total and ingredients that require a purchase.
+- Include an editable native Excel column chart comparing purchase cost by ingredient.
+- Include an editable native Excel pie or doughnut chart showing each ingredient's share of the used-ingredient cost. Do not replace charts with images.
+
+Use formulas for every calculated result, not hard-coded answers. Changing desired servings, stock, package prices, or budget must update dependent calculations and chart source data through those formulas. Keep the workbook self-contained without external workbook links. Use readable headers, appropriate numeric formats, and frozen header rows on the tabular worksheets.
+
+Create the output folder if it does not exist.
+
+Save the workbook as:
+C:\Users\pc\Desktop\Create\xlsx\031-040_sol_6_1_light\Run_{NNN}\CarbonaraCost_{NNN}.xlsx

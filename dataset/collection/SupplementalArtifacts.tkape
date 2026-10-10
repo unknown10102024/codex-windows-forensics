@@ -1,0 +1,38 @@
+Description: Native supplementary artifacts without Codex session or conversation content
+Author: Anonymous artifact collection
+Version: 1.0
+Id: 06deee69-2daf-452a-81df-cc3f210394e0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Codex package PowerShell native startup profile
+        Category: ProgramExecution
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.Codex_*\LocalCache\Local\Microsoft\PowerShell\
+        FileMask: StartupProfileData-NonInteractive
+        Recursive: false
+        Comment: Binary native startup profile; absence without collection is outside scope. ModuleAnalysisCache is not a substitute.
+    -
+        Name: Codex package manifest
+        Category: Apps
+        Path: C:\Program Files\WindowsApps\OpenAI.Codex_*\
+        FileMask: AppxManifest.xml
+        Recursive: false
+        Comment: Package identity and manifest version, not an execution time.
+    -
+        Name: Defender native Store
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Scans\History\Store\
+        Recursive: true
+        Comment: Native process history Store. Specialized parser required; do not treat scanned paths as process images.
+    -
+        Name: Windows Search databases and companion files
+        Category: FileKnowledge
+        Path: C:\ProgramData\Microsoft\Search\Data\Applications\Windows\
+        Recursive: false
+        Comment: Includes Windows.edb or Windows.db and Windows-gather.db with journal/checkpoint companions; parse working copies only.
+    -
+        Name: Windows Search per-user databases and companion files
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Search\Data\Applications\S-1*\
+        Recursive: false
+        Comment: Per-user Search location from the installed WindowsIndexSearch target.

@@ -1,0 +1,10 @@
+Modify this existing Excel workbook:
+C:\Users\pc\Desktop\Modify\xlsx\001-010_astra_ultra\Run_{NNN}\CarbonaraCost_handmade_{NNN}.xlsx
+
+Replace every occurrence of "carbonara", ignoring case, with "Risotto" throughout the workbook's text, including cells, chart titles, and text boxes.
+
+Add one medium-sized red rectangle near the lower-left edge of the used content area on the first worksheet, without obscuring existing cells or charts.
+
+Apart from these edits, preserve the existing worksheets, ingredient data, quantities, formulas, calculations, charts, and formatting as closely as possible. Do not change the recipe or its cost assumptions.
+
+Save your changes to this same file, keeping its filename and location unchanged.

@@ -1,0 +1,10 @@
+Modify this existing Word document:
+C:\Users\pc\Desktop\Modify\docx\001-010_astra_ultra\Run_{NNN}\CarbonaraRecipe_handmade_{NNN}.docx
+
+Replace every occurrence of "carbonara", ignoring case, with "Risotto" in the document's text, including text in tables and shapes.
+
+Add one medium-sized red rectangle near the lower-left corner of the first page, without obscuring existing text or graphics.
+
+Apart from these edits, preserve the existing recipe steps, ingredients, quantities, tables, flowchart, and formatting as closely as possible. Do not rewrite the recipe.
+
+Save your changes to this same file, keeping its filename and location unchanged.

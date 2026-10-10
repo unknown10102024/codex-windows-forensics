@@ -1,0 +1,14 @@
+Work within the folder named "S04_Workspace" on the current Windows user's Desktop. The named folders and files below identify the task targets. Unless explicitly stated otherwise, paths below are relative to S04_Workspace.
+The folders Intake, Working, Archive, Deliverables, and Scratch already exist. Scope the requested document changes to the current task; leave other prepared test documents and earlier task results unchanged. You may use Scratch for any supporting files you need.
+Use the available tools and applications. Do not change account, permission, sandbox, or security settings. Software installation and its normal application configuration are allowed only when explicitly requested in the current task; use normal approval/UAC mechanisms when needed. Do not empty the whole Recycle Bin or remove unrelated items.
+Briefly report completion or any blocker when finished.
+
+Achieve the following final state. You may choose the method, tools, and intermediate actions.
+
+Creation requirement:
+Author a new blank document during this task. Do not copy or use any prepared input document, earlier task result, existing user document, or downloaded sample as its starting file or template. A normal built-in blank template of your chosen application or library is allowed. The specified destination is initially absent; if it already exists, report the conflict instead of overwriting it. Leave normal application/library metadata as produced; do not manually normalize metadata to match another condition. At task completion, the document must be saved and closed. Leave this completed document unchanged in later tasks: do not reopen, edit, resave, rename, move, copy, export, or delete it for an additional task. Supporting implementation steps during this task are your choice unless an ordered operation constrains them.
+
+Final state:
+- "Deliverables/created_document.docx" must be a newly authored DOCX with exactly three nonempty paragraphs: "S04 creation document", "status=ready", and "purpose=metadata comparison".
+- Use the built-in Heading 1 style for the first paragraph and Normal for the other two; keep the three paragraphs on one page.
+- The document must be saved and closed by task completion and retained at the specified path without later intentional changes. Other prepared files and earlier task results must remain unchanged.

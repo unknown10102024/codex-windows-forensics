@@ -1,0 +1,14 @@
+Create a Word document explaining how to make carbonara for two servings.
+
+Include:
+- A title and a short introduction.
+- An editable table listing the ingredients, quantities, and preparation notes.
+- A cooking flowchart made from editable shapes connected by editable arrow connectors.
+- Short explanations of the cooking steps.
+
+Use a separate shape for each cooking step and arrange the flowchart so the sequence is easy to follow. Keep the text inside the shapes editable.
+
+Create the output folder if it does not exist.
+
+Save the document as:
+C:\Users\pc\Desktop\Create\docx\021-030_sol_6_1_ultra\Run_{NNN}\CarbonaraRecipe_{NNN}.docx

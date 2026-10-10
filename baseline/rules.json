@@ -1,0 +1,181 @@
+{
+  "scope": "Dataset reproduction; one unobserved product-name alias family omitted from the distributable table. The omission was checked against every released OOXML document and changes no candidate set.",
+  "B1": {
+    "fields": [
+      "docProps/app.xml:Application",
+      "docProps/core.xml:creator",
+      "docProps/core.xml:lastModifiedBy"
+    ],
+    "normalization": "NFKC, strip, collapse whitespace, casefold; fullmatch escaped alias + optional numeric version suffix",
+    "aliases": {
+      "Office": [
+        "Office",
+        "Microsoft Office",
+        "Microsoft 365",
+        "Microsoft Word",
+        "Microsoft Office Word",
+        "Microsoft Excel",
+        "Microsoft Office Excel",
+        "Microsoft PowerPoint",
+        "Microsoft Office PowerPoint",
+        "Microsoft Macintosh Word",
+        "Microsoft Macintosh Excel",
+        "Microsoft Macintosh PowerPoint"
+      ],
+      "python-docx": [
+        "python-docx",
+        "python_docx"
+      ],
+      "artifact-tool": [
+        "artifact-tool",
+        "artifact_tool",
+        "artifact tool"
+      ],
+      "Python zipfile": [
+        "Python zipfile",
+        "zipfile",
+        "Python's zipfile"
+      ],
+      "JSZip": [
+        "JSZip"
+      ],
+      "python-pptx": [
+        "python-pptx",
+        "python_pptx"
+      ],
+      "openpyxl": [
+        "openpyxl"
+      ],
+      "node docx": [
+        "node docx",
+        "node-docx"
+      ],
+      "Pandoc": [
+        "Pandoc"
+      ],
+      "Open XML SDK": [
+        "Open XML SDK",
+        "OpenXML SDK",
+        "Microsoft Open XML SDK"
+      ],
+      "Xceed DocX": [
+        "Xceed DocX",
+        "DocX",
+        "Xceed.Words.NET"
+      ],
+      ".NET ZipArchive": [
+        ".NET ZipArchive",
+        "System.IO.Compression.ZipArchive"
+      ],
+      "LibreOffice": [
+        "LibreOffice",
+        "LibreOffice Writer",
+        "LibreOffice Calc",
+        "LibreOffice Impress"
+      ],
+      "OpenOffice": [
+        "OpenOffice",
+        "OpenOffice.org",
+        "Apache OpenOffice",
+        "OpenOffice Writer",
+        "OpenOffice Calc",
+        "OpenOffice Impress"
+      ],
+      "WPS Office": [
+        "WPS Office",
+        "WPS Writer",
+        "WPS Spreadsheets",
+        "WPS Presentation"
+      ],
+      "ChatGPT": [
+        "ChatGPT",
+        "OpenAI ChatGPT"
+      ],
+      "Codex": [
+        "Codex",
+        "OpenAI Codex"
+      ],
+      "Python": [
+        "Python"
+      ],
+      "PptxGenJS": [
+        "PptxGenJS"
+      ],
+      "Walnut Exporter": [
+        "Walnut Exporter"
+      ]
+    },
+    "version_suffix_regex": "(?:[ /_-]v?\\d+(?:[.\\-_]\\d+)*(?:[a-z0-9.+_-]*)?)?",
+    "combination": "sorted set union of recognized field labels; the identical answer is used for both roles",
+    "no_causal_alias": [
+      "python-docx is not Python zipfile",
+      "ChatGPT is not artifact-tool",
+      "Walnut Exporter is not artifact-tool",
+      "Python is not Python zipfile"
+    ],
+    "namespaces": "read only direct children with the specified local names; retain namespace in raw evidence"
+  },
+  "B2": {
+    "part": "[Content_Types].xml",
+    "header": "central",
+    "integer_exact_match": true,
+    "template_lineage": "always unknown",
+    "compression_guard": false,
+    "conditions": [
+      {
+        "format": "DOCX",
+        "target": "Office",
+        "field": "flags",
+        "value": 6
+      },
+      {
+        "format": "DOCX",
+        "target": "Python zipfile",
+        "field": "external_attr",
+        "value": 25165824
+      },
+      {
+        "format": "PPTX",
+        "target": "JSZip",
+        "field": "extract_version",
+        "value": 10
+      },
+      {
+        "format": "PPTX",
+        "target": "Office",
+        "field": "flags",
+        "value": 6
+      },
+      {
+        "format": "PPTX",
+        "target": "Python zipfile",
+        "field": "external_attr",
+        "value": 25165824
+      },
+      {
+        "format": "PPTX",
+        "target": "artifact-tool",
+        "field": "create_system",
+        "value": 3
+      },
+      {
+        "format": "XLSX",
+        "target": "Office",
+        "field": "flags",
+        "value": 6
+      },
+      {
+        "format": "XLSX",
+        "target": "Python zipfile",
+        "field": "external_attr",
+        "value": 25165824
+      },
+      {
+        "format": "XLSX",
+        "target": "artifact-tool",
+        "field": "create_system",
+        "value": 3
+      }
+    ]
+  }
+}

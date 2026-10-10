@@ -1,0 +1,21 @@
+{
+  "scope": "Corpus metadata only. No public documents or archives are redistributed.",
+  "Govdocs1": {
+    "description_url": "https://digitalcorpora.org/corpora/file-corpora/files/",
+    "distribution_url": "https://digitalcorpora.s3.amazonaws.com/s3_browser.html#corpora/files/govdocs1/by_type/",
+    "collection": "by_type",
+    "license_note": "Consult the source corpus terms. Local hash equality is not publisher-signature verification."
+  },
+  "NapierOne": {
+    "description_url": "https://doi.org/10.1016/j.fsidi.2021.301330",
+    "collection": "total; not NOMAGIC, PASSWORD, or tiny",
+    "license_note": "The preserved distribution documentation identifies the Edinburgh Napier University License Agreement and Open Government Licence v3.0. Consult the publisher documentation and retain its notices.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0.",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+  },
+  "download_provenance": {
+    "NapierOne": "Preserved acquisition used Python urllib.request HTTP Range responses with exact ranges/lengths and If-Match ETag, then ordered assembly and five publisher hash comparisons. Initial partial transfers were retained. An S3 multipart ETag was not treated as a file digest.",
+    "Govdocs1": "Existing by_type archives and extracted copies were transferred locally and hash-verified. Use archives.csv to retrieve matching upstream archives."
+  },
+  "current_release_action": "Reformatted existing manifests and receipts only; no new network request, document access, archive access, or quarantine restoration."
+}

@@ -1,0 +1,15 @@
+Create an 8-slide PowerPoint presentation explaining how to make carbonara for two servings.
+
+Include:
+- A title and a short introduction.
+- An editable PowerPoint table listing the ingredients, quantities, and preparation notes.
+- A cooking flowchart made from editable shapes connected by arrows.
+- Short explanations of the cooking steps.
+- Practical cooking tips and common mistakes to avoid.
+
+Use a separate shape for each cooking step and arrange the flowchart so the sequence is easy to follow. Keep the text inside the shapes editable. Choose a suitable structure for the eight slides.
+
+Create the output folder if it does not exist.
+
+Save the presentation as:
+C:\Users\pc\Desktop\Create\pptx\031-040_sol_6_1_light\Run_{NNN}\CarbonaraRecipe_{NNN}.pptx

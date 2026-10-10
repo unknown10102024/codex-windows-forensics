@@ -1,0 +1,10 @@
+Modify this existing PowerPoint presentation:
+C:\Users\pc\Desktop\Modify\pptx\021-030_sol_6_1_ultra\Run_{NNN}\CarbonaraRecipe_handmade_{NNN}.pptx
+
+Replace every occurrence of "carbonara", ignoring case, with "Risotto" throughout the presentation's text, including slide titles, tables, and shapes.
+
+Add one medium-sized red rectangle near the lower-left corner of the first slide, without obscuring existing text or graphics.
+
+Apart from these edits, preserve the existing slides, recipe steps, ingredients, quantities, tables, flowchart, and formatting as closely as possible. Do not rewrite the recipe.
+
+Save your changes to this same file, keeping its filename and location unchanged.

@@ -1,0 +1,52 @@
+Description: Codex runtime and bin files for offline hash inventory and matching runtime module versions
+Author: Anonymous artifact collection
+Version: 1.0
+Id: aa03a871-01f8-4ebc-9e32-07fbe57e5c92
+RecreateDirectories: true
+Targets:
+    -
+        Name: Primary runtime executable files including staging directories
+        Category: Apps
+        Path: C:\Users\%user%\.cache\codex-runtimes\
+        FileMask: '*.exe'
+        Recursive: true
+        Comment: Hash copied files with an offline inventory utility; the target itself collects files, not a hash-only listing.
+    -
+        Name: Primary runtime matching DLL files including staging directories
+        Category: Apps
+        Path: C:\Users\%user%\.cache\codex-runtimes\
+        FileMask: '*.dll'
+        Recursive: true
+        Comment: Preserve exact runtime build for MVID matching of StartupProfileData method records. These files can be large.
+    -
+        Name: Primary runtime native Node modules
+        Category: Apps
+        Path: C:\Users\%user%\.cache\codex-runtimes\
+        FileMask: '*.node'
+        Recursive: true
+    -
+        Name: Codex bin executable files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\OpenAI\Codex\bin\
+        FileMask: '*.exe'
+        Recursive: true
+        Comment: Exact versioned bin files support SHA-1 comparison with Amcache; folder hash names are not an IOC.
+    -
+        Name: Codex bin DLL files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\OpenAI\Codex\bin\
+        FileMask: '*.dll'
+        Recursive: true
+    -
+        Name: Codex CUA runtime executable files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\OpenAI\Codex\runtimes\
+        FileMask: '*.exe'
+        Recursive: true
+        Comment: Keep CUA Node separate from the primary task runtime Node.
+    -
+        Name: Codex CUA runtime DLL files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\OpenAI\Codex\runtimes\
+        FileMask: '*.dll'
+        Recursive: true

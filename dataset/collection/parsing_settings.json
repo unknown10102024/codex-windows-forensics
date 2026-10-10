@@ -1,0 +1,475 @@
+{
+  "schema": "artifact-parsing-settings/1",
+  "scope": "Options transcribed from one completed supplemental host acquisition. Paths are explicit placeholders, not directly executable commands.",
+  "jobs": [
+    {
+      "job_id": "Prefetch_001",
+      "artifact_kind": "Prefetch",
+      "input_relative_pattern": "Windows/prefetch",
+      "argv_template": [
+        "PECmd.exe",
+        "-d",
+        "{INPUT_DIRECTORY}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "prefetch.csv",
+        "-q",
+        "--mp"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "MFT_001",
+      "artifact_kind": "MFT",
+      "input_relative_pattern": "$MFT",
+      "argv_template": [
+        "MFTECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "mft.csv",
+        "--at"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "USN_001",
+      "artifact_kind": "USN",
+      "input_relative_pattern": "$Extend/$J",
+      "argv_template": [
+        "MFTECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "usn.csv",
+        "-m",
+        "{SAME_VOLUME_MFT}"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Security_001",
+      "artifact_kind": "Security",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Security.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "security.csv",
+        "--inc",
+        "4608,4609,4616,4624,4634,4647,4648,4720,4726,4731,4732,4733,4734,4798,4799,1102"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_001",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-AppModel-Runtime%4Admin.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_002",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-AppXDeployment%4Operational.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_003",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-AppXDeployment-Server%4Operational.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_004",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-AppXDeploymentServer%4Operational.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_005",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-AppXDeploymentServer%4Restricted.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_006",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-Security-Mitigations%4KernelMode.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Appx_007",
+      "artifact_kind": "Appx",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-Security-Mitigations%4UserMode.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "appx.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "DPAPI_001",
+      "artifact_kind": "DPAPI",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-Crypto-DPAPI%4BackUpKeySvc.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "dpapi.csv",
+        "--inc",
+        "12289"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "DPAPI_002",
+      "artifact_kind": "DPAPI",
+      "input_relative_pattern": "Windows/System32/winevt/logs/Microsoft-Windows-Crypto-DPAPI%4Operational.evtx",
+      "argv_template": [
+        "EvtxECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "dpapi.csv",
+        "--inc",
+        "12289"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Amcache_001",
+      "artifact_kind": "Amcache",
+      "input_relative_pattern": "Windows/AppCompat/Programs/Amcache.hve",
+      "argv_template": [
+        "AmcacheParser.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "amcache.csv",
+        "-i",
+        "--mp"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_001",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Users/{PROFILE}/NTUSER.DAT",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "NO_OUTPUT_REVIEW_LOG",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_002",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Users/{PROFILE}/AppData/Local/Microsoft/Windows/UsrClass.dat",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "NO_OUTPUT_REVIEW_LOG",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_003",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Users/{PROFILE}/NTUSER.DAT",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED_WITH_ERRORS",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_004",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Users/{PROFILE}/AppData/Local/Microsoft/Windows/UsrClass.dat",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_005",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Windows/System32/config/SAM",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_006",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Windows/System32/config/SOFTWARE",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Registry_007",
+      "artifact_kind": "Registry",
+      "input_relative_pattern": "Windows/System32/config/SYSTEM",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "registry.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "Shimcache_001",
+      "artifact_kind": "Shimcache",
+      "input_relative_pattern": "Windows/System32/config/SYSTEM",
+      "argv_template": [
+        "AppCompatCacheParser.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "shimcache.csv"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "PackageHive_001",
+      "artifact_kind": "PackageHive",
+      "input_relative_pattern": "Users/{PROFILE}/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/SystemAppData/Helium/User.dat",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "packagehive.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "NO_OUTPUT_REVIEW_LOG",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "PackageHive_002",
+      "artifact_kind": "PackageHive",
+      "input_relative_pattern": "Users/{PROFILE}/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/SystemAppData/Helium/UserClasses.dat",
+      "argv_template": [
+        "RECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "--csvf",
+        "packagehive.csv",
+        "--bn",
+        "{CONFIG_DIRECTORY}\\NativeRegistry.reb"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "NO_OUTPUT_REVIEW_LOG",
+      "recorded_exit_code": 0
+    },
+    {
+      "job_id": "SRUM_001",
+      "artifact_kind": "SRUM",
+      "input_relative_pattern": "Windows/System32/SRU/SRUDB.dat",
+      "argv_template": [
+        "SrumECmd.exe",
+        "-f",
+        "{INPUT_FILE}",
+        "--csv",
+        "{OUTPUT_DIRECTORY}",
+        "-r",
+        "{SAME_VOLUME_SOFTWARE_HIVE}"
+      ],
+      "recorded_parser_version": "2026.5.0",
+      "recorded_status": "PARSED",
+      "recorded_exit_code": 0
+    }
+  ],
+  "input_contract": [
+    "Use copied artifact bytes and fresh output directories.",
+    "Keep hive transaction-log companions with their matching hive working copy.",
+    "Supply USN -m only for the matching source-volume MFT; do not substitute another volume.",
+    "Supply SRUM -r only for the matching source-volume SOFTWARE hive; keep original database/log companions.",
+    "Use NativeRegistry.reb for --bn.",
+    "Collected PCA text, package startup-profile data, package manifests, Defender Store/MPLog, search databases and runtime binaries require their own handling; collection is not decoding."
+  ],
+  "limitations": [
+    "Recorded parser success is not a completeness guarantee. Preserve PARSED_WITH_ERRORS and NO_OUTPUT_REVIEW_LOG.",
+    "No executable is bundled. These settings do not include event-map packages or a full host-analysis engine.",
+    "The two supplementary targets extend, rather than replace, baseline filesystem/event-log/Registry/execution collection."
+  ]
+}

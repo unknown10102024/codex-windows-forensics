@@ -1,0 +1,3 @@
+corpus,archive_id,archive_member,sha256,size_bytes,role
+NapierOne,NapierOne_DOCX,DOCX.pdf,461bdf215cfd067a949335d859c949fd35bde03bb5c4ee37fcc8482e8f97ebc3,3517809,Bundled documentation; excluded from the OOXML evaluation denominator.
+NapierOne,NapierOne_PPTX,PPTX.pdf,f03342ab25663f44db210519a87b7d0349ec483d0789f3ad35e51fd81fa381a2,3517898,Bundled documentation; excluded from the OOXML evaluation denominator.

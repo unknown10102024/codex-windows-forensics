@@ -1,0 +1,4 @@
+Find all files related to James in this folder on my desktop and change his name to John:
+C:\Users\pc\Desktop\Search\011-020_astra_light\Run_{NNN}
+
+Search and make changes only within this folder and its subfolders.

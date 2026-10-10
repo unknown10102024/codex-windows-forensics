@@ -1,0 +1,16 @@
+document_id,relative_path,format,sha256,bytes,expected_target,first_authoring_tool,last_saver
+SEARCH-INPUT-001,documents/search/inputs/input-001.xlsx,XLSX,8a3cc0aeff9d6a0dbbe2e6e895c6abfd99d503505067eff96343128aa9a6b613,2652,False,custom OOXML generation,Python zipfile
+SEARCH-INPUT-002,documents/search/inputs/input-002.pdf,PDF,c17f9268f4d01ca037799cc0ec579ec7865f69a281d8cfba2a5d98f99a89d598,1364,True,PyMuPDF,PyMuPDF
+SEARCH-INPUT-003,documents/search/inputs/input-003.docx,DOCX,48111e55058d7ce19456eaecc8592a384b2f7e53ed2a7729ce6535d5dbdfff18,3087,False,custom OOXML generation,Python zipfile
+SEARCH-INPUT-004,documents/search/inputs/input-004.pptx,PPTX,bc5ae91af753f2e907dc7d23516406b96e2acb8e6f526a52eacdb4bfadd62ffb,29353,True,python-pptx,Python zipfile via python-pptx
+SEARCH-INPUT-005,documents/search/inputs/input-005.xlsx,XLSX,a23133020b98156e14e46a66609bcbbb48596ef4abf341f482fa27192cb96eee,2672,True,custom OOXML generation,Python zipfile
+SEARCH-INPUT-006,documents/search/inputs/input-006.txt,TXT,8554a64a2ca8449d0a3541023b38385f23f3dfa5c2e5cb181bf6167d4db66f76,262,True,Python UTF-8 text generation,Python bytes writer
+SEARCH-INPUT-007,documents/search/inputs/input-007.pdf,PDF,ef697c8d5f23b54c4ae9129d43a7cf4bfc3b72b658a5de0188f21db5d8677505,1352,False,PyMuPDF,PyMuPDF
+SEARCH-INPUT-008,documents/search/inputs/input-008.txt,TXT,655dba6323b8e85b66628ae9c137118187c0d8d5a5e7976d268d120e87c535de,273,True,Python UTF-8 text generation,Python bytes writer
+SEARCH-INPUT-009,documents/search/inputs/input-009.docx,DOCX,669aa5040ed7f2d415e97b037c8a1466336a63b4f83e6ba5840c620cb85478b9,3103,True,custom OOXML generation,Python zipfile
+SEARCH-INPUT-010,documents/search/inputs/input-010.txt,TXT,4756864770a3267c1579163e1c451631c4baf34d3e704669602ed336bedd3315,225,False,Python UTF-8 text generation,Python bytes writer
+SEARCH-INPUT-011,documents/search/inputs/input-011.docx,DOCX,ff6fc0c77e053babbcbf14d3279c7bf6d74d1578c8ab36fce76ce88ec1c3a93a,3074,True,custom OOXML generation,Python zipfile
+SEARCH-INPUT-012,documents/search/inputs/input-012.xlsx,XLSX,1176071c06c589846f0a3a5f238cd57101933b95eb594266ecc366cbcbd4dd39,3178,True,custom OOXML generation,Python zipfile
+SEARCH-INPUT-013,documents/search/inputs/input-013.pptx,PPTX,e16e7f4591015f35da1a550268087f48d7ffcb8a1c920551e9a9010ee2e9fa4c,29326,False,python-pptx,Python zipfile via python-pptx
+SEARCH-INPUT-014,documents/search/inputs/input-014.pdf,PDF,a15e5d4228dcde7f54ecc88cc91b9649270bff5d0a745b71a3eb20ff98ef25a8,1820,True,PyMuPDF,PyMuPDF
+SEARCH-INPUT-015,documents/search/inputs/input-015.pptx,PPTX,38ef0fda017fdc4b45db296a2fb5dbdf48d238c7ef89acd6b40c16ef507b6cd1,29317,True,python-pptx,Python zipfile via python-pptx

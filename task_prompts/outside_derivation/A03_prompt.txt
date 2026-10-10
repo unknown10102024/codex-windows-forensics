@@ -1,0 +1,15 @@
+Perform the following task in the S04\_Workspace folder on the Desktop.
+
+Create a new DOCX document from scratch. Do not copy or modify an existing document.
+Write the following content as three separate paragraphs:
+
+Document lifecycle test
+status=draft
+count=1
+
+Save the document as Working\Lifecycle.docx.
+You may choose the tools and implementation method.
+If you opened the document in an application, save and close it.
+Do not modify unrelated files. Stop after completing this task.
+
+Do not use python-docx or manually construct the DOCX by assembling XML files into a ZIP archive. Choose a different method yourself.
